@@ -25,7 +25,7 @@ jobs:
       OUTPUT: ${{needs.list-installers.outputs.list}}
     steps:
       - name: Send Report
-        if: github.repository == 'Comp-Labs/Download-macOS'
+        if: github.repository == 'XtremeCoder007/MacosDownloader'
         uses: dawidd6/action-send-mail@v3
         with:
           server_address: smtp.gmail.com
